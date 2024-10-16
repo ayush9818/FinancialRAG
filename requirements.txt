@@ -1,2 +1,8 @@
 pandas 
 matplotlib 
+llama-index-embeddings-huggingface
+llama-index-embeddings-instructor
+llama-index
+llama-index-vector-stores-faiss
+faiss-cpu
+python-dotenv
