@@ -167,6 +167,15 @@ if __name__ == "__main__":
         assert os.path.exists(queries_path), f"{queries_path} does not exist"
         assert os.path.exists(gt_path), f"{gt_path} does not exist"
 
+        corpus, queries, gt = load_data(corpus_path=corpus_path,
+                                            queries_path=queries_path,
+                                            gt_path=gt_path)
+        final_df = evaluate_on_dataset(cfg, corpus, queries, gt, with_reranker=args.rerank)
+        file_name = dataset_name + '_results.csv'
+        print(f"Saving result to {save_dir / file_name}")
+        final_df.to_csv(save_dir / file_name, index=False)
+        print("\n")
+
 
 
 
