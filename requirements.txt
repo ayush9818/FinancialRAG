@@ -4,6 +4,7 @@ llama-index-embeddings-huggingface
 llama-index-embeddings-instructor
 llama-index
 llama-index-vector-stores-faiss
+llama-index-retrievers-bm25
 faiss-cpu
 python-dotenv
 pytrec_eval
