@@ -6,3 +6,4 @@ llama-index
 llama-index-vector-stores-faiss
 faiss-cpu
 python-dotenv
+pytrec_eval
