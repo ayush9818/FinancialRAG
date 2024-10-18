@@ -14,3 +14,12 @@ conda activate fin_env
 cd FinancialRAG
 pip install -r requirements.txt
 ```
+
+
+# Submission
+
+```bash
+python collate_submission.py \
+       --result-dir ../results/v1-base-rerank/ \
+       --submission-path ../submission/v1-base-rerank.csv
+```
